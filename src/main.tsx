@@ -8,6 +8,7 @@ import "./index.css";
 
 const App = () => {
   const isAuthenticated = !!localStorage.getItem("userToken");
+  console.log(isAuthenticated);
 
   return (
     <React.StrictMode>
@@ -15,6 +16,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
+          {/* <Route path="/pedidos" element={<PedidosPage />} /> */}
 
           {isAuthenticated ? (
             <>

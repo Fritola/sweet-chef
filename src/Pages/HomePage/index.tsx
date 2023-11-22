@@ -283,9 +283,9 @@ export const HomePage = () => {
             gap: 25,
           }}
         >
-          {faqData.map((faq) => (
+          {faqData.map((faq, index) => (
             <FaqCard>
-              <Card key={faq.key} faq={faq} />
+              <Card key={index} faq={faq} />
             </FaqCard>
           ))}
         </div>
